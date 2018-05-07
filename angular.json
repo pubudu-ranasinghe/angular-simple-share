@@ -116,6 +116,46 @@
           }
         }
       }
+    },
+    "simple-share": {
+      "root": "projects/simple-share",
+      "sourceRoot": "projects/simple-share/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/simple-share/tsconfig.lib.json",
+            "project": "projects/simple-share/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/simple-share/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/simple-share/src/test.ts",
+            "tsConfig": "projects/simple-share/tsconfig.spec.json",
+            "karmaConfig": "projects/simple-share/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/simple-share/tsconfig.lib.json",
+              "projects/simple-share/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "component-library"
