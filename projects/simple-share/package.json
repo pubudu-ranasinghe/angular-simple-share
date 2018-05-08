@@ -1,6 +1,6 @@
 {
   "name": "@pubudutr/simple-share",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple share component for angular",
   "author": "Pubudu Ranasinghe <pubudutr@gmail.com> (https://pubuduranasinghe.com)",
   "peerDependencies": {
