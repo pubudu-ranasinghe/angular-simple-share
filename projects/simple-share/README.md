@@ -6,12 +6,12 @@ Simple Share is an angular component to embed social links. This was developed a
 
 Install `simple-share` from `npm`
 
-```npm i @pubudu/simple-share --save```
+```npm i @pubudutr/simple-share --save```
 
 Import the SimpleShareModule in `app.module.ts`
 
 ```
-import { SimpleShareModule } from '@pubudu/simple-share';
+import { SimpleShareModule } from '@pubudutr/simple-share';
 
 @NgModule({
   ...
