@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  links = {
+    facebook: 'https://facebook.com',
+    instagram: 'https://instagram.com'
+  };
 }
